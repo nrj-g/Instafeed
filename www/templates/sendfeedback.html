@@ -1,0 +1,84 @@
+<ion-view title="#MSELAB2014">
+  <ion-content class="padding" >
+  	<div class="card" style="background-color:#f8f8f8;">
+	  	<h3>Overall Rating</h3>
+	    	<div class="range range-positive">
+			  	<i class="icon ion-sad"></i>
+			  	<input type="range" name="volume" ng-model="overall">
+			  	<i class="icon ion-happy"></i>
+			</div>
+	</div>
+	<div class="item-input-wrapper">
+		<i class="icon ion-ios7-search placeholder-icon"></i>
+		<input type="search" autofocus />
+		<button class="button button-icon ion-ios7-close-empty input-button"></button>
+	</div>
+	
+	<div ng-bind-html="item" ng-repeat="item in fill track by $index"></div>
+	
+	
+	
+
+	<!--<div class="card">
+	  	<h4>Rating</h4>
+	    	<div class="range range-positive">
+			  	<i class="icon ion-sad"></i>
+			  	<input type="range" name="volume">
+			  	<i class="icon ion-happy"></i>
+			</div>
+	</div>
+	
+	<div class="card">
+		
+		  <lable class="item item-toggle no-list-border">
+		     <span class="h4">Yes Or No</span>
+		     <label class="toggle toggle-positive">
+		       <input type="checkbox" ng-model="yesornoValueBool" ng-change="yesOrNoFunc()">
+		       <div class="track">
+		         <div class="handle"></div>
+		       </div>
+		     </label>
+		     <span class="yesorno positive">{{yesornoValue}}</span>
+		  </label>
+	</div>
+
+	<div class="card">
+	  	<h4>Long Answers</h4>
+	  	<textarea placeholder="Enter any text" rows=5></textarea>	    	
+	</div>
+
+	<div class="card">
+	  	<label class="item item-input item-select no-list-border">
+		    <div class="input-label">
+		      <span class="h4">Select From List</span>
+		    </div>
+		    <select>
+		      <option>Item 1</option>
+		      <option selected>Item 2</option>
+		      <option>Item 3</option>
+		    </select>
+		 </label>    	
+	</div>
+	<div class="card">
+		<label class="item item-input no-list-border">
+	  		<span class="input-label h4">Date</span>
+	  		<input type="date" placeholder="Enter Date">
+		</label>
+	</div>
+	<div class="card">
+		<label class="item item-input no-list-border">
+	  		<span class="input-label h4">Number</span>
+	  		<input type="number" placeholder="Enter Number">
+		</label>
+	</div-->
+	
+	<!--ion-item normal="fill">{{fill}}</ion-item-->
+	<!-- CARDLISTS OF ELEMENTS -->
+
+	<button class="button button-block button-positive" ng-click="submit()">
+  			
+			Send Feedback
+	</button>
+	{{resultsDisplay}}
+  </ion-content>
+</ion-view>

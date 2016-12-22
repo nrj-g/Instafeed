@@ -1,0 +1,21 @@
+<ion-view title="Feedback">
+  <ion-content class="padding">
+    
+    <!--HASHTAG -->
+    <div class="list list-inset">
+	  <label class="item item-input">
+	    <i class="placeholder-icon default-color">#</i>
+	    <input type="text" placeholder="HASHTAG" class="hashtag default-color">
+	  </label>
+	</div>
+
+	<!-- GeoLocation Search -->
+	<h4 align="center">Near You</h4>
+  <ion-list class="list">
+      <ion-item ng-controller="SendFeedbackCtrl" ng-repeat="hastagi in hashtags" type="item-text-wrap"  ng-click="fun(hastagi.hash)" class="item item-icon-left" >
+    <i class="icon {{hastagi.icon}}"></i>{{hastagi.hash}}<span class="badge">{{hastagi.note}}</span>
+      </ion-item>
+    </ion-list>
+	
+  </ion-content>
+</ion-view>

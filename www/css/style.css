@@ -1,0 +1,25 @@
+/* Empty. Add your own CSS if you like */
+.default-color {
+	color: #145fd7!important;
+}
+
+input.hashtag {
+	font-size: 130%;
+	font-weight: bold;
+	text-transform:uppercase;
+}
+
+.round-edges{
+	border-radius: 100%;
+}
+
+
+.yesorno{
+	position: absolute;
+	top: 15px;
+	right: 80px;
+}
+
+.no-list-border{
+	border-width:0px!important;
+}
